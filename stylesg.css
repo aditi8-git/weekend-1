@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    background: #fff5cc;
+}
+
+#main-heading {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgb(188, 20, 20);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffedcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0003;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px #0003;
+    cursor: pointer;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px #0005;
+    border: 2px solid #ffcc5b;
+}
